@@ -165,6 +165,11 @@ function init() {
         console.log(mesh.children[0]);
         mesh.children[0].material = new THREE.MeshLambertMaterial();
 		scene.add( mesh );
+
+     var mesh2 = mesh.clone();
+     scene.add( mesh2 );
+
+        mesh2.position.z = -30;
         mesh.position.z = -30;
         mesh.position.x = 10;
      
